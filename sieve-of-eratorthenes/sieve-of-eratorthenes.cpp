@@ -14,6 +14,9 @@ void sieve(vector<long> &prime_list) {
             }
         }
     }
+    for(long i = 2; i <= n; ++i)
+        if(not checked_number[i])
+            prime_list.push_back(i);
 }
 
 void print_prime(vector<long> &prime_list) {
